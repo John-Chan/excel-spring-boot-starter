@@ -80,6 +80,17 @@
 
 	<profiles>
 		<profile>
+			<!-- tip:  mvn package -P 'aliyun-repo' -->
+			<id>aliyun-repo</id>
+			<repositories>
+				<repository>
+					<id>aliyun</id>
+					<name>aliyun</name>
+					<url>http://maven.aliyun.com/nexus/content/groups/public</url>
+				</repository>
+			</repositories>
+		</profile>
+		<profile>
 			<id>release</id>
 			<build>
 				<plugins>
